@@ -1,0 +1,53 @@
+image gallery;
+
+
+	<!DOCTYPE html>
+	<html>
+	<body>
+	<link rel="stylesheet" href="style.css">
+
+<div class="gallery">
+	<a target="_blank" href="images/ramen.avif">
+	<img src="images/ramen.avif" alt="ramen">
+	</a>
+	<div class="description">Ramen</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href="images/pizza.avif">
+	<img src="images/pizza.avif" alt="ramen">
+	</a>
+	<div class="description">Pizza</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href="images/biryani.jpg">
+	<img src="images/biryani.jpg" alt="ramen">
+	</a>
+	<div class="description">Biryani</div>
+</div>
+
+	</body>
+	</html>
+
+
+style.css
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 79%);
+    margin: 5px;
+    width: 250px;
+}
+.gallery .description{
+    text-align: center;
+    padding: 10px;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 1%, 15%);
+    background-color: aqua;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
